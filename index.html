@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="assets/agenda.png" alt="Logo de agenda">
+            <h1> Agenda de contatos</h1>
+        </header>
+        <form id="form-contatos">
+            <input type="text" id="nome-contato" required placeholder="Nome do contato" required>
+            <input type="tel" id="numero-telefone" pattern="[0-9]{10}" maxlength="11" required placeholder="telefone (xx) xxxxx-xxxx" required>
+            <button type="submit"> Cadastrar</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Telefone
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Anne Suelen</td>
+                    <td>44984174941</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
